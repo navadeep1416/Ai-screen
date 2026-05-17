@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Permission Setup</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-container": "#571bc1",
+                      "tertiary-fixed-dim": "#cebdff",
+                      "surface-bright": "#333a40",
+                      "secondary-fixed-dim": "#d0bcff",
+                      "inverse-on-surface": "#2b3137",
+                      "on-surface": "#dde3eb",
+                      "on-secondary": "#3c0091",
+                      "on-tertiary": "#381385",
+                      "on-secondary-fixed-variant": "#5516be",
+                      "on-surface-variant": "#d6c0d3",
+                      "surface-container": "#1a2026",
+                      "on-secondary-container": "#c4abff",
+                      "inverse-primary": "#a200ba",
+                      "on-primary-fixed": "#36003e",
+                      "surface-container-lowest": "#080f14",
+                      "surface": "#0e141a",
+                      "tertiary-container": "#9b7fed",
+                      "outline-variant": "#524251",
+                      "secondary": "#d0bcff",
+                      "on-primary": "#580065",
+                      "tertiary-fixed": "#e8ddff",
+                      "inverse-surface": "#dde3eb",
+                      "on-background": "#dde3eb",
+                      "primary-fixed": "#ffd6fd",
+                      "tertiary": "#cebdff",
+                      "error": "#ffb4ab",
+                      "on-tertiary-fixed-variant": "#4f319c",
+                      "surface-container-highest": "#2f353c",
+                      "primary-container": "#e14ef6",
+                      "on-primary-fixed-variant": "#7c008e",
+                      "on-tertiary-fixed": "#21005e",
+                      "primary-fixed-dim": "#fbabff",
+                      "error-container": "#93000a",
+                      "surface-tint": "#fbabff",
+                      "on-secondary-fixed": "#23005c",
+                      "background": "#0e141a",
+                      "on-error-container": "#ffdad6",
+                      "surface-variant": "#2f353c",
+                      "surface-dim": "#0e141a",
+                      "surface-container-high": "#242b31",
+                      "primary": "#fbabff",
+                      "surface-container-low": "#161c22",
+                      "on-primary-container": "#4d0059",
+                      "outline": "#9f8b9d",
+                      "secondary-fixed": "#e9ddff",
+                      "on-error": "#690005",
+                      "on-tertiary-container": "#31057e"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "4px",
+                      "container-padding": "20px",
+                      "gutter": "16px",
+                      "xs": "4px",
+                      "md": "16px",
+                      "sm": "8px",
+                      "lg": "24px",
+                      "xl": "32px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-xl": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-xl": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        body {
+            background-color: #0A0A14;
+            color: #dde3eb;
+        }
+        .neon-card {
+            background-color: #11091E;
+            border: 1px solid #2A1A4A;
+        }
+        .neon-gradient-text {
+            background: linear-gradient(to right, #D946EF, #8B5CF6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .neon-gradient-bg {
+            background: linear-gradient(to right, #D946EF, #8B5CF6);
+        }
+        .glow-pulse {
+            box-shadow: 0 0 15px rgba(217, 70, 239, 0.4);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4">
+<!-- Mobile Container Wrapper for Preview -->
+<div class="w-full max-w-md h-[852px] bg-[#0A0A14] flex flex-col relative overflow-hidden rounded-[40px] border-[8px] border-[#1a1a2e] shadow-2xl">
+<!-- TopAppBar (Transactional - Semantic Shell Exclusion applies to global nav, but this is a specific header) -->
+<header class="sticky top-0 w-full flex justify-between items-center px-container-padding py-md bg-[#0A0A14]/90 backdrop-blur-md z-50">
+<button class="text-on-surface hover:bg-surface-variant/50 rounded-full p-2 transition-all">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-on-surface">Setup Permissions</h1>
+<div class="w-[40px]"></div> <!-- Spacer for centering -->
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 overflow-y-auto px-container-padding pb-xl no-scrollbar flex flex-col gap-xl mt-md">
+<!-- Progress Indicator -->
+<section class="flex flex-col gap-sm">
+<div class="flex justify-between items-center px-sm">
+<span class="font-label-sm text-label-sm text-primary">Overlay</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Screen</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Notify</span>
+</div>
+<div class="flex gap-2 items-center w-full">
+<div class="h-2 flex-1 rounded-full neon-gradient-bg glow-pulse"></div>
+<div class="h-2 flex-1 rounded-full bg-[#1E1035]"></div>
+<div class="h-2 flex-1 rounded-full bg-[#1E1035]"></div>
+</div>
+</section>
+<!-- Instructions -->
+<section>
+<p class="font-body-md text-body-md text-on-surface-variant text-center">
+                    NAVA requires specific system access to analyze on-screen content and deliver real-time AI insights seamlessly.
+                </p>
+</section>
+<!-- Permission Cards -->
+<section class="flex flex-col gap-md">
+<!-- Card 1: Draw Over Apps (Active/Required) -->
+<div class="neon-card rounded-xl p-md flex items-start gap-md relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+<div class="w-[48px] h-[48px] rounded-full flex items-center justify-center shrink-0 neon-gradient-bg glow-pulse">
+<span class="material-symbols-outlined text-white">layers</span>
+</div>
+<div class="flex flex-col gap-xs flex-1">
+<div class="flex justify-between items-start">
+<h3 class="font-label-md text-label-md font-bold text-on-surface">Draw Over Apps</h3>
+<span class="px-2 py-0.5 rounded-full bg-error/20 border border-error/50 font-label-sm text-label-sm text-error">Required</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant leading-relaxed">Allows NAVA to display AI insights directly on top of your active applications.</p>
+<button class="text-left mt-2 font-label-sm text-label-sm neon-gradient-text font-semibold uppercase tracking-wider">Tap to Enable</button>
+</div>
+</div>
+<!-- Card 2: Screen Reading -->
+<div class="neon-card rounded-xl p-md flex items-start gap-md opacity-80">
+<div class="w-[48px] h-[48px] rounded-full flex items-center justify-center shrink-0 bg-[#1E1035] border border-[#2A1A4A]">
+<span class="material-symbols-outlined text-on-surface-variant">monitor</span>
+</div>
+<div class="flex flex-col gap-xs flex-1">
+<div class="flex justify-between items-start">
+<h3 class="font-label-md text-label-md font-bold text-on-surface">Screen Reading</h3>
+<span class="px-2 py-0.5 rounded-full bg-[#1E1035] border border-[#2A1A4A] font-label-sm text-label-sm text-on-surface-variant">Pending</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant leading-relaxed">Necessary to capture and analyze the content currently visible on your display.</p>
+<span class="text-left mt-2 font-label-sm text-label-sm text-outline-variant uppercase tracking-wider">Locked</span>
+</div>
+</div>
+<!-- Card 3: Notifications -->
+<div class="neon-card rounded-xl p-md flex items-start gap-md opacity-80">
+<div class="w-[48px] h-[48px] rounded-full flex items-center justify-center shrink-0 bg-[#1E1035] border border-[#2A1A4A]">
+<span class="material-symbols-outlined text-on-surface-variant">notifications</span>
+</div>
+<div class="flex flex-col gap-xs flex-1">
+<div class="flex justify-between items-start">
+<h3 class="font-label-md text-label-md font-bold text-on-surface">Notifications</h3>
+<span class="px-2 py-0.5 rounded-full bg-[#1E1035] border border-[#2A1A4A] font-label-sm text-label-sm text-on-surface-variant">Pending</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant leading-relaxed">Keeps NAVA running in the background to ensure uninterrupted analysis.</p>
+<span class="text-left mt-2 font-label-sm text-label-sm text-outline-variant uppercase tracking-wider">Locked</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Action Area -->
+<div class="px-container-padding py-lg bg-[#0A0A14] border-t border-[#1E1035] sticky bottom-0 z-50">
+<button class="w-full py-4 rounded-full bg-[#1E1035] text-on-surface-variant font-label-md text-label-md font-bold cursor-not-allowed transition-all" disabled="">
+                Continue
+            </button>
+</div>
+</div>
+</body></html>

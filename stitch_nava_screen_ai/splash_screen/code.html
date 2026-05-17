@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nava Screen AI - Splash</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#571bc1",
+                        "tertiary-fixed-dim": "#cebdff",
+                        "surface-bright": "#333a40",
+                        "secondary-fixed-dim": "#d0bcff",
+                        "inverse-on-surface": "#2b3137",
+                        "on-surface": "#dde3eb",
+                        "on-secondary": "#3c0091",
+                        "on-tertiary": "#381385",
+                        "on-secondary-fixed-variant": "#5516be",
+                        "on-surface-variant": "#d6c0d3",
+                        "surface-container": "#1a2026",
+                        "on-secondary-container": "#c4abff",
+                        "inverse-primary": "#a200ba",
+                        "on-primary-fixed": "#36003e",
+                        "surface-container-lowest": "#080f14",
+                        "surface": "#0e141a",
+                        "tertiary-container": "#9b7fed",
+                        "outline-variant": "#524251",
+                        "secondary": "#d0bcff",
+                        "on-primary": "#580065",
+                        "tertiary-fixed": "#e8ddff",
+                        "inverse-surface": "#dde3eb",
+                        "on-background": "#dde3eb",
+                        "primary-fixed": "#ffd6fd",
+                        "tertiary": "#cebdff",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed-variant": "#4f319c",
+                        "surface-container-highest": "#2f353c",
+                        "primary-container": "#e14ef6",
+                        "on-primary-fixed-variant": "#7c008e",
+                        "on-tertiary-fixed": "#21005e",
+                        "primary-fixed-dim": "#fbabff",
+                        "error-container": "#93000a",
+                        "surface-tint": "#fbabff",
+                        "on-secondary-fixed": "#23005c",
+                        "background": "#0e141a",
+                        "on-error-container": "#ffdad6",
+                        "surface-variant": "#2f353c",
+                        "surface-dim": "#0e141a",
+                        "surface-container-high": "#242b31",
+                        "primary": "#fbabff",
+                        "surface-container-low": "#161c22",
+                        "on-primary-container": "#4d0059",
+                        "outline": "#9f8b9d",
+                        "secondary-fixed": "#e9ddff",
+                        "on-error": "#690005",
+                        "on-tertiary-container": "#31057e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "container-padding": "20px",
+                        "gutter": "16px",
+                        "xs": "4px",
+                        "md": "16px",
+                        "sm": "8px",
+                        "lg": "24px",
+                        "xl": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-xl": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen antialiased selection:bg-primary-container/30 selection:text-primary overflow-hidden">
+<!-- Main Splash Container -->
+<main class="fixed inset-0 flex flex-col items-center justify-between py-12 md:py-24 px-container-padding">
+<!-- Spacer for vertical alignment -->
+<div class="h-8"></div>
+<!-- Center Hub -->
+<div class="flex flex-col items-center justify-center relative w-full max-w-md mx-auto z-10">
+<!-- Deep Space Radial Glow -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-secondary-container rounded-full blur-[100px] opacity-20 pointer-events-none"></div>
+<!-- AI Sparkle Icon -->
+<div class="relative flex items-center justify-center w-[100px] h-[100px] mb-8">
+<!-- Outer subtle pulse -->
+<div class="absolute inset-0 bg-gradient-to-tr from-primary-container to-secondary-container rounded-full blur-[15px] opacity-30"></div>
+<!-- Core Icon -->
+<span class="material-symbols-outlined text-[80px] bg-clip-text text-transparent bg-gradient-to-tr from-primary-container to-secondary-container relative z-10" style="font-variation-settings: 'FILL' 1;">
+                    auto_awesome
+                </span>
+</div>
+<!-- Brand Identity -->
+<h1 class="font-headline-lg text-headline-lg bg-clip-text text-transparent bg-gradient-to-r from-primary-container to-secondary-container tracking-[0.1em] text-center mb-md relative z-10 drop-shadow-md">
+                NAVA SCREEN AI
+            </h1>
+<!-- Positioning Statement -->
+<p class="font-body-md text-body-md italic text-on-surface-variant text-center max-w-[280px] relative z-10">
+                thinks like a friend, replies like you
+            </p>
+</div>
+<!-- Bottom Loading & Attribution -->
+<div class="flex flex-col items-center gap-sm w-full max-w-[180px] z-10">
+<!-- Loading Track -->
+<div class="w-full h-[2px] bg-surface-container-highest rounded-full overflow-hidden relative shadow-[0_0_8px_rgba(225,78,246,0.1)]">
+<!-- Loading Progress Indicator -->
+<div class="absolute top-0 left-0 h-full w-[45%] bg-gradient-to-r from-primary-container to-secondary-container rounded-full shadow-[0_0_10px_rgba(225,78,246,0.5)]"></div>
+</div>
+<!-- Signature -->
+<span class="font-label-sm text-label-sm text-outline mt-xs uppercase tracking-widest">
+                by Navadeep
+            </span>
+</div>
+</main>
+</body></html>

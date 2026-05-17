@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Settings - NAVA SCREEN AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-container": "#571bc1",
+                    "tertiary-fixed-dim": "#cebdff",
+                    "surface-bright": "#333a40",
+                    "secondary-fixed-dim": "#d0bcff",
+                    "inverse-on-surface": "#2b3137",
+                    "on-surface": "#dde3eb",
+                    "on-secondary": "#3c0091",
+                    "on-tertiary": "#381385",
+                    "on-secondary-fixed-variant": "#5516be",
+                    "on-surface-variant": "#d6c0d3",
+                    "surface-container": "#1a2026",
+                    "on-secondary-container": "#c4abff",
+                    "inverse-primary": "#a200ba",
+                    "on-primary-fixed": "#36003e",
+                    "surface-container-lowest": "#080f14",
+                    "surface": "#0e141a",
+                    "tertiary-container": "#9b7fed",
+                    "outline-variant": "#524251",
+                    "secondary": "#d0bcff",
+                    "on-primary": "#580065",
+                    "tertiary-fixed": "#e8ddff",
+                    "inverse-surface": "#dde3eb",
+                    "on-background": "#dde3eb",
+                    "primary-fixed": "#ffd6fd",
+                    "tertiary": "#cebdff",
+                    "error": "#ffb4ab",
+                    "on-tertiary-fixed-variant": "#4f319c",
+                    "surface-container-highest": "#2f353c",
+                    "primary-container": "#e14ef6",
+                    "on-primary-fixed-variant": "#7c008e",
+                    "on-tertiary-fixed": "#21005e",
+                    "primary-fixed-dim": "#fbabff",
+                    "error-container": "#93000a",
+                    "surface-tint": "#fbabff",
+                    "on-secondary-fixed": "#23005c",
+                    "background": "#0e141a",
+                    "on-error-container": "#ffdad6",
+                    "surface-variant": "#2f353c",
+                    "surface-dim": "#0e141a",
+                    "surface-container-high": "#242b31",
+                    "primary": "#fbabff",
+                    "surface-container-low": "#161c22",
+                    "on-primary-container": "#4d0059",
+                    "outline": "#9f8b9d",
+                    "secondary-fixed": "#e9ddff",
+                    "on-error": "#690005",
+                    "on-tertiary-container": "#31057e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "4px",
+                    "container-padding": "20px",
+                    "gutter": "16px",
+                    "xs": "4px",
+                    "md": "16px",
+                    "sm": "8px",
+                    "lg": "24px",
+                    "xl": "32px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-xl": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-card {
+            background: rgba(26, 32, 38, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(82, 66, 81, 0.3);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-24 md:pb-0 selection:bg-primary/30">
+<header class="sticky top-0 w-full flex justify-between items-center px-container-padding py-md bg-surface/80 backdrop-blur-md z-50">
+<div class="flex items-center gap-4">
+<button class="hover:bg-surface-variant/50 rounded-full p-2 transition-all text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary tracking-tight">NAVA SCREEN AI</h1>
+</div>
+<div class="flex items-center gap-4">
+<nav class="hidden md:flex gap-6 mr-4">
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="font-body-md text-label-md">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="history">history</span>
+<span class="font-body-md text-label-md">History</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="psychology">psychology</span>
+<span class="font-body-md text-label-md">Brain</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary font-bold bg-primary-container/10 rounded-xl p-2 transition-all duration-300" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="settings" data-weight="fill" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-body-md text-label-md">Settings</span>
+</a>
+</nav>
+<div class="w-10 h-10 rounded-full bg-surface-variant overflow-hidden border border-outline-variant/50 cursor-pointer hover:ring-2 ring-primary transition-all">
+<img alt="User Avatar" class="w-full h-full object-cover" data-alt="A futuristic avatar portrait of a user in a neon-lit cyberpunk environment. Soft pink and purple rim lighting illuminates the profile against a deep space dark background. High-resolution, cinematic lighting, sleek sci-fi aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQC2mHrRbcDAMQHf8RqkXKIynTFHZhUR0fX_YD76JlV23o0FLX6tQmQJt0_DOzz5y0BY6xoujjtNynLW11bVadtQaP9b3lcNl0QCnVun9K6lEgkjEb01dUKraMgk3ezE79RZXsltvRllAayW-i6d5ctm_Lk00XjcZrVhaD_aWGVzNHG8OpABsH14wUb7WMLM7UzgLKgz3hRwV9FScRnn5mWc3yBdlU1GtNa-wd6Aqo7ENoXXiqKBefUvFc_IdQWM9VCrX7FZpGQx1Q"/>
+</div>
+</div>
+</header>
+<main class="max-w-4xl mx-auto px-container-padding py-8">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-10">Settings</h2>
+<div class="space-y-10">
+<section>
+<h3 class="font-label-md text-label-md text-tertiary uppercase tracking-[0.1em] mb-4 pl-2">AI Preferences</h3>
+<div class="glass-card rounded-xl overflow-hidden divide-y divide-outline-variant/30">
+<div class="flex items-center justify-between p-4 hover:bg-surface-variant/30 transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-variant/50 flex items-center justify-center text-primary group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined" data-icon="tune">tune</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">Default Mode</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="font-body-md text-body-md">Balanced</span>
+<span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 hover:bg-surface-variant/30 transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-variant/50 flex items-center justify-center text-primary group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined" data-icon="forum">forum</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">Reply Style</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="font-body-md text-body-md">Concise</span>
+<span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 hover:bg-surface-variant/30 transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-variant/50 flex items-center justify-center text-primary group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined" data-icon="language">language</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">Language</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="font-body-md text-body-md">English</span>
+<span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h3 class="font-label-md text-label-md text-tertiary uppercase tracking-[0.1em] mb-4 pl-2">Popup Behavior</h3>
+<div class="glass-card rounded-xl overflow-hidden divide-y divide-outline-variant/30">
+<div class="flex items-center justify-between p-4 hover:bg-surface-variant/30 transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-variant/50 flex items-center justify-center text-tertiary-container group-hover:bg-tertiary-container/20 transition-colors">
+<span class="material-symbols-outlined" data-icon="aspect_ratio">aspect_ratio</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">Size</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="font-body-md text-body-md">Medium</span>
+<span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 hover:bg-surface-variant/30 transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-variant/50 flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined" data-icon="drag_indicator">drag_indicator</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">Edge Snapping</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-surface-highest border border-outline-variant rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary peer-checked:border-primary shadow-[0_0_10px_rgba(251,171,255,0.2)]"></div>
+</label>
+</div>
+<div class="flex items-center justify-between p-4 hover:bg-surface-variant/30 transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-variant/50 flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined" data-icon="close_fullscreen">close_fullscreen</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">Auto-minimize</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-surface-highest border border-outline-variant rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface-variant after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary peer-checked:border-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between p-4 hover:bg-surface-variant/30 transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-variant/50 flex items-center justify-center text-tertiary-container group-hover:bg-tertiary-container/20 transition-colors">
+<span class="material-symbols-outlined" data-icon="picture_in_picture">picture_in_picture</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">Position</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="font-body-md text-body-md">Bottom Right</span>
+<span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h3 class="font-label-md text-label-md text-tertiary uppercase tracking-[0.1em] mb-4 pl-2">Privacy</h3>
+<div class="glass-card rounded-xl overflow-hidden divide-y divide-outline-variant/30">
+<div class="flex items-center justify-between p-4 hover:bg-surface-variant/30 transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-variant/50 flex items-center justify-center text-secondary group-hover:bg-secondary/20 transition-colors">
+<span class="material-symbols-outlined" data-icon="history_toggle_off">history_toggle_off</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">Save History</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-surface-highest border border-outline-variant rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary peer-checked:border-primary shadow-[0_0_10px_rgba(251,171,255,0.2)]"></div>
+</label>
+</div>
+<div class="flex items-center justify-between p-4 hover:bg-surface-variant/30 transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-variant/50 flex items-center justify-center text-secondary group-hover:bg-secondary/20 transition-colors">
+<span class="material-symbols-outlined" data-icon="auto_delete">auto_delete</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">Auto-clear</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="font-body-md text-body-md">30 Days</span>
+<span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 hover:bg-surface-variant/30 transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-variant/50 flex items-center justify-center text-secondary group-hover:bg-secondary/20 transition-colors">
+<span class="material-symbols-outlined" data-icon="info">info</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">Data Info</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</section>
+<section>
+<h3 class="font-label-md text-label-md text-tertiary uppercase tracking-[0.1em] mb-4 pl-2">Appearance</h3>
+<div class="glass-card rounded-xl overflow-hidden divide-y divide-outline-variant/30">
+<div class="flex items-center justify-between p-4 hover:bg-surface-variant/30 transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-variant/50 flex items-center justify-center text-primary-fixed-dim group-hover:bg-primary-fixed-dim/20 transition-colors">
+<span class="material-symbols-outlined" data-icon="dark_mode">dark_mode</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">Theme</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Dark Neon</span>
+<span class="material-symbols-outlined text-sm text-on-surface-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<div class="flex flex-col p-4">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-10 h-10 rounded-lg bg-surface-variant/50 flex items-center justify-center text-primary-fixed-dim">
+<span class="material-symbols-outlined" data-icon="palette">palette</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">Accent Color</span>
+</div>
+<div class="flex justify-around items-center px-4 py-2">
+<button class="w-8 h-8 rounded-full bg-error border border-outline-variant/50 hover:scale-110 transition-transform"></button>
+<button class="w-8 h-8 rounded-full bg-secondary border border-outline-variant/50 hover:scale-110 transition-transform"></button>
+<button class="w-8 h-8 rounded-full bg-tertiary border border-outline-variant/50 hover:scale-110 transition-transform"></button>
+<button class="w-8 h-8 rounded-full bg-inverse-primary border border-outline-variant/50 hover:scale-110 transition-transform"></button>
+<button class="w-8 h-8 rounded-full bg-primary border-2 border-on-surface ring-4 ring-primary/20 hover:scale-110 transition-transform shadow-[0_0_15px_rgba(251,171,255,0.4)]"></button>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h3 class="font-label-md text-label-md text-tertiary uppercase tracking-[0.1em] mb-4 pl-2">About</h3>
+<div class="glass-card rounded-xl overflow-hidden divide-y divide-outline-variant/30">
+<div class="flex items-center justify-between p-4 hover:bg-surface-variant/30 transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-variant/50 flex items-center justify-center text-outline group-hover:bg-outline/20 transition-colors">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">Help &amp; Support</span>
+</div>
+<span class="material-symbols-outlined text-sm text-on-surface-variant" data-icon="arrow_outward">arrow_outward</span>
+</div>
+<div class="flex items-center justify-between p-4 hover:bg-surface-variant/30 transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-variant/50 flex items-center justify-center text-outline group-hover:bg-outline/20 transition-colors">
+<span class="material-symbols-outlined" data-icon="code">code</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">GitHub Repository</span>
+</div>
+<span class="material-symbols-outlined text-sm text-on-surface-variant" data-icon="arrow_outward">arrow_outward</span>
+</div>
+<div class="flex items-center justify-between p-4 hover:bg-surface-variant/30 transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-variant/50 flex items-center justify-center text-outline">
+<span class="material-symbols-outlined" data-icon="system_update">system_update</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">Version</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface-variant">v2.4.1</span>
+</div>
+</div>
+</section>
+<div class="flex justify-center pt-8 pb-12">
+<button class="px-8 py-3 rounded-full border border-error text-error hover:bg-error/10 transition-colors font-label-md text-label-md flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+                    Sign Out
+                </button>
+</div>
+</div>
+</main>
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#0D0720] border-t border-[#1E1035] shadow-lg shadow-primary/10">
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="font-body-md text-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="history">history</span>
+<span class="font-body-md text-label-sm">History</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="psychology">psychology</span>
+<span class="font-body-md text-label-sm">Brain</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary font-bold bg-primary-container/10 rounded-xl p-2 transition-all duration-300 scale-95" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="settings" data-weight="fill" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-body-md text-label-sm">Settings</span>
+</a>
+<div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-12 h-1 bg-[#2D1F4E] rounded-full"></div>
+</nav>
+</body></html>

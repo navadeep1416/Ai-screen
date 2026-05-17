@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "661966919153",
+    "project_id": "navaassist-10331",
+    "storage_bucket": "navaassist-10331.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661966919153:android:c0d818794244d1363e6050",
+        "android_client_info": {
+          "package_name": "com.nava.screenai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkG1NliyKhFDgI_OMXUUk0NDdu3hcUhkw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

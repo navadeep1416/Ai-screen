@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NAVA Screen AI - History</title>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#571bc1",
+                        "tertiary-fixed-dim": "#cebdff",
+                        "surface-bright": "#333a40",
+                        "secondary-fixed-dim": "#d0bcff",
+                        "inverse-on-surface": "#2b3137",
+                        "on-surface": "#dde3eb",
+                        "on-secondary": "#3c0091",
+                        "on-tertiary": "#381385",
+                        "on-secondary-fixed-variant": "#5516be",
+                        "on-surface-variant": "#d6c0d3",
+                        "surface-container": "#1a2026",
+                        "on-secondary-container": "#c4abff",
+                        "inverse-primary": "#a200ba",
+                        "on-primary-fixed": "#36003e",
+                        "surface-container-lowest": "#080f14",
+                        "surface": "#0e141a",
+                        "tertiary-container": "#9b7fed",
+                        "outline-variant": "#524251",
+                        "secondary": "#d0bcff",
+                        "on-primary": "#580065",
+                        "tertiary-fixed": "#e8ddff",
+                        "inverse-surface": "#dde3eb",
+                        "on-background": "#dde3eb",
+                        "primary-fixed": "#ffd6fd",
+                        "tertiary": "#cebdff",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed-variant": "#4f319c",
+                        "surface-container-highest": "#2f353c",
+                        "primary-container": "#e14ef6",
+                        "on-primary-fixed-variant": "#7c008e",
+                        "on-tertiary-fixed": "#21005e",
+                        "primary-fixed-dim": "#fbabff",
+                        "error-container": "#93000a",
+                        "surface-tint": "#fbabff",
+                        "on-secondary-fixed": "#23005c",
+                        "background": "#0e141a",
+                        "on-error-container": "#ffdad6",
+                        "surface-variant": "#2f353c",
+                        "surface-dim": "#0e141a",
+                        "surface-container-high": "#242b31",
+                        "primary": "#fbabff",
+                        "surface-container-low": "#161c22",
+                        "on-primary-container": "#4d0059",
+                        "outline": "#9f8b9d",
+                        "secondary-fixed": "#e9ddff",
+                        "on-error": "#690005",
+                        "on-tertiary-container": "#31057e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "container-padding": "20px",
+                        "gutter": "16px",
+                        "xs": "4px",
+                        "md": "16px",
+                        "sm": "8px",
+                        "lg": "24px",
+                        "xl": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-xl": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Custom utilities for neon theme */
+        .bg-base-deep { background-color: #0A0A14; }
+        .bg-surface-card { background-color: #11091E; }
+        .border-neon-subtle { border-color: #2A1A4A; }
+        .text-accent-purple { color: #A78BFA; }
+        .border-accent-purple { border-color: #A78BFA; }
+        .bg-primary-gradient { background-image: linear-gradient(to right, #D946EF, #8B5CF6); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-base-deep text-on-surface antialiased min-h-screen flex flex-col font-sans">
+<!-- TopAppBar -->
+<header class="sticky top-0 w-full flex justify-between items-center px-container-padding py-md bg-surface/80 backdrop-blur-md z-50">
+<button class="text-on-surface hover:bg-surface-variant/50 rounded-full p-2 transition-all flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary tracking-tight">NAVA SCREEN AI</h1>
+<button class="text-on-surface hover:bg-surface-variant/50 rounded-full p-1 transition-all overflow-hidden w-10 h-10 border border-neon-subtle">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="A close-up portrait of a user profile picture, featuring a young woman with a neutral, calm expression. The lighting is soft and natural, contrasting with the dark neon UI context. The image is cropped in a perfect circle, representing a standard digital avatar in a futuristic AI application." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8pi4Q2wy7NyQu8YPaQte0jioqsmKQ7OTMnrAyY3X_osaoPu4JQ0vttq1VLtgJ8NfTxF-SNHeaSRU4JjeV1ZYmwO_qkd07e3qwiS380ijfdjwulS4OxfeFElTQszZ9cvav-MQ0ru73DLbPhiifcrXrN_h96fWIjKOcw-3VLUkPXU_69kz65lJ1u6dyoyZqh1_XobClBGq50_oQoHTea-pci-muqjQjLH6Q0_8rGwGLnXQWbvzJJzp6lzjoajAY3z1-QXmIdzKsU1Ah"/>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 pb-[100px] flex flex-col gap-lg mt-sm">
+<!-- Page Header & Filter -->
+<section class="flex justify-between items-center px-container-padding">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile font-bold tracking-tight">History</h2>
+<button class="w-10 h-10 flex items-center justify-center rounded-full border border-neon-subtle text-on-surface-variant hover:text-white hover:border-accent-purple transition-all">
+<span class="material-symbols-outlined" data-icon="filter_list">filter_list</span>
+</button>
+</section>
+<!-- Horizontal Filter Pills -->
+<section class="flex overflow-x-auto gap-sm px-container-padding no-scrollbar pb-xs">
+<button class="px-5 py-2 rounded-full bg-primary-gradient text-white font-label-md text-label-md whitespace-nowrap shadow-[0_0_15px_rgba(217,70,239,0.3)]">
+                All
+            </button>
+<button class="px-5 py-2 rounded-full bg-transparent border border-accent-purple text-accent-purple font-label-md text-label-md whitespace-nowrap hover:bg-[#A78BFA]/10 transition-colors">
+                Love
+            </button>
+<button class="px-5 py-2 rounded-full bg-transparent border border-accent-purple text-accent-purple font-label-md text-label-md whitespace-nowrap hover:bg-[#A78BFA]/10 transition-colors">
+                Crush
+            </button>
+<button class="px-5 py-2 rounded-full bg-transparent border border-accent-purple text-accent-purple font-label-md text-label-md whitespace-nowrap hover:bg-[#A78BFA]/10 transition-colors">
+                Friend
+            </button>
+<button class="px-5 py-2 rounded-full bg-transparent border border-accent-purple text-accent-purple font-label-md text-label-md whitespace-nowrap hover:bg-[#A78BFA]/10 transition-colors">
+                Colleague
+            </button>
+</section>
+<!-- Conversation Cards List -->
+<section class="flex flex-col gap-md px-container-padding">
+<!-- Card 1 -->
+<article class="bg-surface-card border border-neon-subtle rounded-[20px] p-md flex flex-col gap-sm hover:scale-[1.02] hover:border-[#8B5CF6] transition-all cursor-pointer relative overflow-hidden group">
+<!-- Top Row: Avatar, Name, Badge, Time -->
+<div class="flex items-center gap-sm">
+<div class="w-12 h-12 rounded-full overflow-hidden border border-neon-subtle flex-shrink-0">
+<img alt="Avatar" class="w-full h-full object-cover" data-alt="A portrait of a young man with short dark hair, looking directly at the camera with a slight smile. The background is blurred, focusing attention on his face. The lighting is moody and cinematic, perfectly suiting the dark neon aesthetic of the AI interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs30pDbwryFx8QrBgW55ao6n86xpMibbUeSxQw6OWZe6LsH4qNcLfoZvUaocWO7LgS75PlACy3yV-2ELIENHjQrVv_Hq1k9I1pZJCpeIzFLigo5zObEIEQWvCsg8wlextW1Q9j4CLk8ISw-89_-AxHgFubloYOjzVqFbENPBz4mRrt53IgTSJVMLvLnf5YpePjjrjPQvYvK3qjqI_FlTBieHE-CoYdVy3-j574MsCNK-0lQxFP3ReDbE-Ltt_h7NTQN-Vi5aeWjZhh"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md text-on-surface">Elias Thorne</h3>
+<span class="text-on-surface-variant font-label-sm text-label-sm">10:42 AM</span>
+</div>
+<div class="flex items-center gap-xs mt-0.5">
+<span class="px-2 py-0.5 rounded-md bg-[#8B5CF6]/20 text-[#A78BFA] text-[10px] uppercase font-bold tracking-wider">Crush</span>
+</div>
+</div>
+</div>
+<!-- Message Preview -->
+<p class="text-on-surface-variant font-body-md text-body-md line-clamp-2 mt-xs">
+                    I was thinking about what you said yesterday. Analyzing the subtext, there's a 78% probability he's waiting for you to make the first move.
+                </p>
+<!-- Stat Pills -->
+<div class="flex gap-sm mt-xs">
+<div class="flex items-center gap-xs px-2.5 py-1 rounded-md bg-[#05050A] border border-neon-subtle text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]" data-icon="trending_up">trending_up</span>
+                        85%
+                    </div>
+<div class="flex items-center gap-xs px-2.5 py-1 rounded-md bg-[#05050A] border border-neon-subtle text-[#A78BFA] font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]" data-icon="bolt">bolt</span>
+                        High
+                    </div>
+<div class="flex items-center gap-xs px-2.5 py-1 rounded-md bg-[#05050A] border border-neon-subtle text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]" data-icon="mood">mood</span>
+                        Playful
+                    </div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface-card border border-neon-subtle rounded-[20px] p-md flex flex-col gap-sm hover:scale-[1.02] hover:border-[#8B5CF6] transition-all cursor-pointer relative overflow-hidden group">
+<div class="flex items-center gap-sm">
+<div class="w-12 h-12 rounded-full overflow-hidden border border-neon-subtle flex-shrink-0">
+<img alt="Avatar" class="w-full h-full object-cover" data-alt="A portrait of a young woman with long dark hair, wearing glasses, looking thoughtful. She is lit with a subtle blue and purple neon rim light, integrating her perfectly into the cyberpunk, dark UI aesthetic of the application." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnXmVtITfnTtMbqMcrp8ckV6FbnKPlnq_btGDoLYcJX5NfM85xap6CW5xrhcDc3ezx9KHtdP5xI25Qm1Havzh0hB3ZAlKSuUEeJRZmzleidHJkYxG3Ffu_p9DDcyahF4Vuyd21B976lOKh0Rw1kKRXrY7vcB0zywPbo0kV5XK-cnJFAdUi9DEpDtTwmfskrpPpUZxG-ejOpzWTiZ3WHbj24WfjlPasJ0iru7lA9XOoyQDmmETZeO1RVitGd_mvIqO_3OULH97qFJVL"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md text-on-surface">Maya Lin</h3>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Yesterday</span>
+</div>
+<div class="flex items-center gap-xs mt-0.5">
+<span class="px-2 py-0.5 rounded-md bg-secondary-container/20 text-tertiary-fixed-dim text-[10px] uppercase font-bold tracking-wider">Colleague</span>
+</div>
+</div>
+</div>
+<p class="text-on-surface-variant font-body-md text-body-md line-clamp-2 mt-xs">
+                    The tone of the email indicates frustration. I recommend a diplomatic response focusing on alignment rather than defensive metrics.
+                </p>
+<div class="flex gap-sm mt-xs">
+<div class="flex items-center gap-xs px-2.5 py-1 rounded-md bg-[#05050A] border border-neon-subtle text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]" data-icon="trending_flat">trending_flat</span>
+                        42%
+                    </div>
+<div class="flex items-center gap-xs px-2.5 py-1 rounded-md bg-[#05050A] border border-neon-subtle text-[#A78BFA] font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]" data-icon="bolt">bolt</span>
+                        Low
+                    </div>
+<div class="flex items-center gap-xs px-2.5 py-1 rounded-md bg-[#05050A] border border-neon-subtle text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]" data-icon="sentiment_dissatisfied">sentiment_dissatisfied</span>
+                        Tense
+                    </div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-surface-card border border-neon-subtle rounded-[20px] p-md flex flex-col gap-sm hover:scale-[1.02] hover:border-[#8B5CF6] transition-all cursor-pointer relative overflow-hidden group">
+<div class="flex items-center gap-sm">
+<div class="w-12 h-12 rounded-full overflow-hidden border border-neon-subtle flex-shrink-0">
+<div class="w-full h-full bg-surface-container-highest flex items-center justify-center text-primary font-headline-md">
+                            S
+                        </div>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md text-on-surface">Samir &amp; Co</h3>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Mon</span>
+</div>
+<div class="flex items-center gap-xs mt-0.5">
+<span class="px-2 py-0.5 rounded-md bg-[#D946EF]/20 text-[#D946EF] text-[10px] uppercase font-bold tracking-wider">Friend Group</span>
+</div>
+</div>
+</div>
+<p class="text-on-surface-variant font-body-md text-body-md line-clamp-2 mt-xs">
+                    Based on the group chat dynamics, planning the trip for the 15th maximizes participation probability by 92%. Let's draft the invite.
+                </p>
+<div class="flex gap-sm mt-xs">
+<div class="flex items-center gap-xs px-2.5 py-1 rounded-md bg-[#05050A] border border-neon-subtle text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]" data-icon="trending_up">trending_up</span>
+                        92%
+                    </div>
+<div class="flex items-center gap-xs px-2.5 py-1 rounded-md bg-[#05050A] border border-neon-subtle text-[#A78BFA] font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]" data-icon="bolt">bolt</span>
+                        Max
+                    </div>
+<div class="flex items-center gap-xs px-2.5 py-1 rounded-md bg-[#05050A] border border-neon-subtle text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]" data-icon="celebration">celebration</span>
+                        Hype
+                    </div>
+</div>
+</article>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#0D0720] border-t border-[#1E1035] shadow-lg shadow-primary/10 backdrop-blur-xl">
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px] mb-1" data-icon="home">home</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary font-bold bg-primary-container/10 rounded-xl p-2 transition-all duration-300 scale-95 shadow-[0_0_20px_rgba(217,70,239,0.15)] relative" href="#">
+<span class="material-symbols-outlined text-[24px] mb-1" data-icon="history" style="font-variation-settings: 'FILL' 1;">history</span>
+<span class="font-label-sm text-label-sm">History</span>
+<div class="absolute -bottom-1 w-8 h-1 bg-primary-gradient rounded-full blur-[2px]"></div>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px] mb-1" data-icon="psychology">psychology</span>
+<span class="font-label-sm text-label-sm">Brain</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px] mb-1" data-icon="settings">settings</span>
+<span class="font-label-sm text-label-sm">Settings</span>
+</a>
+</nav>
+</body></html>
