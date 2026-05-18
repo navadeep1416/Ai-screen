@@ -54,7 +54,7 @@ class _FloatingPopupState extends State<FloatingPopup> {
 
   void _setSize(PopupSizeMode size) {
     setState(() => _currentSize = size);
-    FlutterOverlayWindow.resizeOverlay(WindowSize.matchParent, size.height.toInt(), true);
+    FlutterOverlayWindow.resizeOverlay(-1, size.height.toInt(), true);
   }
 
   @override
