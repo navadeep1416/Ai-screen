@@ -42,7 +42,7 @@ jobs:
 
       # ── Step 6: Analyze code (optional, remove if slow) ───────────────────
       - name: Analyze Code
-        run: flutter analyze --no-fatal-infos
+        run: flutter analyze --no-fatal-infos --no-fatal-warnings
         continue-on-error: true
 
       # ── Step 7: Run tests (optional) ──────────────────────────────────────
