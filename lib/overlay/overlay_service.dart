@@ -33,7 +33,7 @@ class OverlayService {
       visibility: NotificationVisibility.visibilityPublic,
       positionGravity: PositionGravity.auto,
       height: AppConstants.overlayMediumHeight.toInt(),
-      width: WindowSize.matchParent.toInt(),
+      width: -1,
     );
     startWatching('Crush');
   }
